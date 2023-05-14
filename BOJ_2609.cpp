@@ -6,8 +6,7 @@ int main(){
     int a,b;
     cin>>a>>b;
     int mod_num;
-    if(a>b) mod_num=mod(a,b);
-    else mod_num=mod(b,a);
+    (a>b) ? mod_num=mod(a,b):mod_num=mod(b,a);
     a/=mod_num;
     b/=mod_num;
     cout<<mod_num<<"\n";
